@@ -9,6 +9,18 @@ console.log(variable);
 console.assert(typeof variable === "number");
 console.log("1.1415: " + variable + " ## " + typeof variable);
 
+variable = 2 + 7;
+console.assert(typeof variable === "number");
+console.log("2 + 7: " + variable + " ## " + typeof variable);
+
+variable = 2 - 7;
+console.assert(typeof variable === "number");
+console.log("2 - 7: " + variable + " ## " + typeof variable);
+
+variable = 2 * 7;
+console.assert(typeof variable === "number");
+console.log("2 * 7: " + variable + " ## " + typeof variable);
+
 variable = 2 / 7;
 console.assert(typeof variable === "number");
 console.log("2 / 7: " + variable + " ## " + typeof variable);
@@ -70,3 +82,7 @@ console.assert(Number.isNaN(Number.NaN));
 console.assert(Number.isNaN(0 / 0));
 variable = 0 / 0;
 console.log("0 / 0: " + variable + " ## " + typeof variable);
+
+console.log("4^12", Math.pow(4, 12));
+console.log("sqrt 12", Math.sqrt(12));
+console.log("random", Math.random());
