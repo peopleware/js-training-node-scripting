@@ -33,3 +33,4 @@ logger(function() {return "zaza"});
 logger(lolo => lolo);
 
 logger("This is a value in a variable", 42, true, null, undefined, {}, function() {return "zaza"}, lolo => lolo);
+logger();
