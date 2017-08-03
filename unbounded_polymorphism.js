@@ -14,10 +14,32 @@ aVariable = {};
 console.log(aVariable);
 aVariable = new Object();
 console.log(aVariable);
-aVariable = function zaza() {return "zaza"};
+aVariable = function() {return "zaza";};
 console.log(aVariable);
 aVariable = lolo => lolo;
 console.log(aVariable);
+
+let anObject = {
+  α: "alpha",
+  a: 42,
+  b: true,
+  c: null,
+  d: undefined,
+  e: {},
+  f: function() {return "zaza";},
+  g: lolo => lolo
+};
+console.log(JSON.stringify(anObject)); // no functions
+console.log(anObject);
+
+anObject.α = {description: "this is an object"};
+anObject.a = function() {return "zozo";};
+anObject.b = null;
+anObject.c = {}
+anObject.e = -Math.PI;
+anObject.f = "A string";
+console.log(JSON.stringify(anObject)); // no functions
+console.log(anObject);
 
 let logger = anArgument => {
   console.log(anArgument);
